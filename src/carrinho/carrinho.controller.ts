@@ -71,7 +71,7 @@ class CarrinhoController {
                 nome: nome
             });
         }
-        //Calcular o total do carrinho - Ana Luíza
+        //Calcular o total do carrinho
         const total = carrinho.itens.reduce((acc, item) => acc + (item.precoUnitario * item.quantidade), 0);
         carrinho.total = total; 
         // Atualizar a data de atualização do carrinho

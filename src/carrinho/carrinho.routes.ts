@@ -29,6 +29,7 @@ router.put("/carrinho/:produtoId", verificarToken, async (req, res) => {
   }
 });
 
+//Remover item do carrinho
 router.delete("/carrinho/:produtoId", verificarToken, async (req, res) => { //Ana Luíza B1
   try {
     const userId = (req as any).user.id;
@@ -51,6 +52,7 @@ router.delete("/carrinho/:produtoId", verificarToken, async (req, res) => { //An
   }
 }); //Ana Luíza B1
 
+//Exibir o total atualizado do carrinho
 router.get("/carrinho", verificarToken, async (req, res) => { //Ana Luíza B5
   try {
     const userId = (req as any).user.id; //Ana Luíza B5
