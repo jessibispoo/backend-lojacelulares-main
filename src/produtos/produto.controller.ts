@@ -2,7 +2,7 @@ import type { Request, Response } from 'express'
 import { db } from '../database/banco-mongo.js'
 import { ObjectId } from 'mongodb'
 
-// jessica ✅ Controller de produtos com CRUD completo
+
 class ProdutoController {
     async listar(req: Request, res: Response) {
         const produtos = await db.collection('produtos').find().toArray()
